@@ -7,72 +7,135 @@
     <link rel="stylesheet" href="style.css">
     <title>Kelton Energy</title>
   </head>
+
   <body>
+    <!-- Navigation Bar -->
     <header>
-      <div class ="logo">
+      <div class ="logo_name">
         <a href="">Kelton Energy</a>
       </div>
       <nav>
-        <ul>
-          <li><a href="">Lights</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Contact</a></li>
-          <li><a href="">Login</a></li>
+        <ul class="nav_links">
+          <li><a href="">Home</a></li>
+          <li><a href="#lights">Lights</a></li>
+          <li><a href="#tech">Technology</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
 
-    <section class="title_card">
-      <div class="main_gif">
-        <img src="light.gif">
+    <!-- Title Section -->
+    <section class="title_page">
+      <div class="main_video">
+        <video controls>
+           <source src="street_light.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="title_info">
+        <h2>Solar Street Light</h3>
+        <p>
+          Until now Solar Streetlights have been available as a utilitarian
+          solution and have forced designers to choose between form and
+          function.
+        </p>
       </div>
     </section>
 
-    <section class="lights">
-      <h2>Solar Street Lights</h3>
-      <p>
-        Mira Bella Energy has designed and developed an LED solar street light
-        with the aesthetic and technological design elements, energy capture,
-        and storage, to usher in this new era.
-      </p>
-    </section>
-
-    <section class="about">
-      <div class="content">
-        <h2>A New Kind of Light</h2>
+    <!-- Light Section -->
+    <section class="lights_page" id="lights">
+      <div class="lights_info">
+        <div class ="light_pic">
+          <img src="">
+        </div>
+        <h1>Lights</h1>
           <p>
-            The Santa Cruz Solar Street Light’s elegant design blends the solar
-            panel, LED light engine, and battery system into a form worthy of
-            display in even the most distinctive communities. Our patented
-            linear, minimal wind-loading, bifacial cell array is what sets
-            this structure apart from any existing LED solar street lighting
-            solutions available to date.
+            Kelton Energy has integrated the components required to support
+            Grid Hybrid lighting into a singulaly elegant design blending the
+            Solar Panel, Led Light Engine and Battery System into a form worth
+            of display in the most distinctive of communities. The patented
+            linear, minimal wind loading bifacial cell array sets this
+            structure apart from any existing solar lighting solutions
+            avaliable to date. Although it's beauty sets it apart, it's
+            processor based solar controller complements it's elegance.
           </p>
       </div>
-      <div class ="light_pic">
-        <img src="light.png">
+    </section>
+
+    <!-- Technology -->
+    <section class="tech_page" id="tech">
+      <div class="tech_info">
+        <div class ="tech_pic">
+          <img src="">
+        </div>
+        <h1>Technology</h1>
+          <p>
+            Our lights all share a robust, micro-processor based core coupled
+            with a Mesh network communications engine allowing simultaneous and
+            configurable lighting operation and instantaneous fault
+            notification. the processor core harvests all of the available
+            solar light using a MPPT charge algorithm and then stores it in a
+            LifePo4 batter pack housed within the light pole allowing a
+            service live of over 3000+ charge cycles. Out Unique Grid Hybrid
+            controller algorithm, when used to upgrade grid based lighting
+            will provide peace of mind coupled with the efficiency of solar
+            lighting. The controller will run off collected solar energy and
+            use the grid for back up during times of poor solar collection to
+            provide virtaully 100% up time.
+          </p>
       </div>
     </section>
 
-    <footer class="footer">
+    <!-- About the Company -->
+    <section class="about_page" id="about">
+      <div class="about_info">
+        <div class ="about_pic">
+          <img src="">
+        </div>
+        <h1>About</h1>
+          <p>
+            Mira Bella Energy was formed to service the needs of Arizona
+            commercial and residential clients wishing to install solar
+            powered PV systems and solar powered lighting systems to
+            supplement or replace their existing utility services to reduce
+            their energy costs while utilizing clean and renewable energy.
+          </p>
+          <p>
+            Mira Bella Energy is dedicated to giving the best customer
+            service and support to our clients in their venture to create
+            a cleaner environment. Let us help you reduce your energy costs
+            in a way that helps our world.
+          </p>
+      </div>
+    </section>
 
+    <!-- Contact information -->
+    <section class="contact_page" id="contact">
+      <div class="contact_info">
+        <h1>Contact</h1>
+          <p>
+            Contact us today!
+          </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
       <div class="logo">
         <img src ="">
       </div>
-
-      <ul class="links">
+      <ul class="footer_links">
+        <li><a href="">Home</a></li>
         <li><a href="">Lights</a></li>
+        <li><a href="">Technology</a></li>
         <li><a href="">About</a></li>
         <li><a href="">Contact</a></li>
-        <li><a href="">Login</a></li>
       </ul>
-
       <div class ="social_media_icons">
       </div>
-
       <div class="copyright">
       </div>
-
     </footer>
   </body>
+
 </html>
