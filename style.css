@@ -71,13 +71,15 @@ section {
   height: 100vh;
 }
 
-/* Title */
-.title_page {
+.title_info, .tech_info, .about_info, .contact_info, .lights_info {
+  padding: 1.5em;
+}
+
+/* Title About pages */
+.title_page, .about_page {
   background: #0067C1;
   color: #fff;
 }
-
-/* Lights */
 
 /* Tech */
 .tech_page {
@@ -85,17 +87,9 @@ section {
   color: #eee;
 }
 
-/* About */
-.about_page {
-  background: #0067C1;
-  color: #fff;
-}
-
-/* Contact */
-
-
-
 /* screen changes */
-@media screen and (min-width : 1000px) {
-
+@media screen and (min-width : 800px) {
+  .title_page, .lights_page, .tech_page, .about_page, .contact_page {
+    display: flex;
+  }
 }
