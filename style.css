@@ -22,7 +22,7 @@ h1 {
 }
 
 /* Navigation bar and footer */
-header, footer {
+header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -30,7 +30,22 @@ header, footer {
 }
 
 footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   background: #000;
+}
+
+.logo {
+  align-self: center;
+  margin: 0;
+  padding: 0;
+}
+
+.logo img {
+  margin: 0;
+  padding: 0;
+  height: 100px;
 }
 
 .logo_name {
@@ -68,11 +83,14 @@ nav a:active {
 
 /* Sections */
 section {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .title_info, .tech_info, .about_info, .contact_info, .lights_info {
   padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 /* Title About pages */
@@ -88,8 +106,33 @@ section {
 }
 
 /* screen changes */
-@media screen and (min-width : 800px) {
-  .title_page, .lights_page, .tech_page, .about_page, .contact_page {
+@media screen and (min-width : 600px) {
+
+  .pic img {
+    width: 600px;
+    margin: auto;
+  }
+}
+@media screen and (min-width : 1200px) {
+  video{
+    width: 1200px;
+    margin: auto;
+  }
+
+  section {
+    min-height: auto;
+  }
+
+  .pic img {
+    margin: 0;
+  }
+
+  .lights_page, .tech_page, .about_page, .contact_page {
     display: flex;
+    flex-direction: row;
+  }
+
+  .about_info, .tech_info, .contact_info, .lights_info {
+    width: 100%;
   }
 }
