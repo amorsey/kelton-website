@@ -46,6 +46,7 @@ footer {
   margin: 0;
   padding: 0;
   height: 100px;
+  width: auto;
 }
 
 .logo_name {
